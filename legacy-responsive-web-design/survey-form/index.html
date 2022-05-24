@@ -16,10 +16,9 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1 id="title" class="text-center">Airline Survey Form</h1>
+        <h1 id="title" class="text-center">Product Pricing Survey</h1>
         <p id="description" class="description text-center">
-          Thank you for visiting us. By filling out this 5-10 minute survey, you
-          will help us obtain the very best results.
+          Thanks for visiting us. Please complete the 5 minute survey.
         </p>
       </header>
       <form id="survey-form">
@@ -54,30 +53,31 @@
             placeholder="Age"
           />
         </div>
-        <div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-          <select name="role" id="dropdown" required="">
-            <option value="">Lorem</option>
-            <option value="">ipsum</option>
-            <option value="">dolor</option>
-            <option value="">sit</option>
-            <option value="">amet</option>
+        <div class="form-group">
+          <p>Are you familiar with the product?</p>
+          <label><input class="input-radio" name="product-familiar" value="own" type="radio" checked=""/>Yes, I own it.</label
+          ><label><input class="input-radio" name="product-familiar" value="saw" type="radio" />Yes, I have seen it.</label
+          ><label><input class="input-radio" name="product-familiar" value="heard" type="radio" />Yes, I have heard of it.</label>
+          <label><input class="input-radio" name="product-familiar" value="not-sure" type="radio" />Maybe, I'm not sure.</label>
+          <label><input class="input-radio" name="product-familiar" value="not" type="radio" />Not at all.</label>
+        </div>
+        <div class="form-group">
+          <p>How often do you purchase electronics?</p>
+          <select id="dropdown" class="form-input" name="shopping" required="">
+            <option disabled="" selected="" value="">Select how often you buy.</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="several">Several times a year</option>
+            <option value="once">Once a year or less</option>
           </select>
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <label><input name="lorem" type="radio" /></label
-          ><label><input name="lorem" type="radio" /></label
-          ><label><input name="lorem" type="radio" /></label>
-        </div>
-        <div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          <select name="" id="">
-            <option value="">Lorem</option>
-            <option value="">ipsum</option>
-            <option value="">dolor</option>
-            <option value="">sit</option>
-            <option value="">amet</option>
+        <div class="form-group">
+          <p>How much would you expect to pay for the product?</p>
+          <select id="costs" class="form-input" name="costs-product" required="">
+            <option disabled="" selected="" value="">Choose how much you pay.</option>
+            <option value="more-10">More than 10$</option>
+            <option value="more-100">More than 100$</option>
+            <option value="more-1000">More than 1000$</option>
           </select>
         </div>
         <div>
