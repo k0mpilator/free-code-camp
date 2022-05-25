@@ -80,24 +80,27 @@
             <option value="more-1000">More than 1000$</option>
           </select>
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
-          <label><input name="ipsum" type="checkbox" /></label>
+        <div class="form-group">
+          <p>How interested are you in owning the product?</p>
+          <label><input class="input-radio" name="interests-product" value="very" type="radio" checked=""/>Very Interested</label>
+          <label><input class="input-radio" name="interests-product" value="some" type="radio"/>Somewhat Interested</label>
+          <label><input class="input-radio" name="interests-product" value="not" type="radio"/>Not Interested</label>
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <textarea name="" id=""></textarea>
+        <div class="form-group">
+          <p>What extra features or add-ons would you like to see?</p>
+          <label><input class="input-checkbox" name="prefer" value="feature-1" type="checkbox" />Feature 1</label>
+          <label><input class="input-checkbox" name="prefer" value="feature-2" type="checkbox" />Feature 2</label>
+          <label><input class="input-checkbox" name="prefer" value="feature-3" type="checkbox" />Feature 3</label>
+          <label><input class="input-checkbox" name="prefer" value="feature-4" type="checkbox" />Feature 4</label>
+          <label><input class="input-checkbox" name="prefer" value="none" type="checkbox" />N/A</label>
         </div>
-        <div><button></button></div>
+        <div class="form-group">
+          <p>Comments</p>
+          <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" class="submit-button" type="submit">Submit</button>
+        </div>
       </form>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
