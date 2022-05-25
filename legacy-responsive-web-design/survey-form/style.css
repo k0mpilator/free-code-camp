@@ -117,7 +117,17 @@ body {
 }
 
 .header {
+    margin-bottom: 2rem;
+}
 
+form {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+}
+
+.form-group {
+    margin: 0 auto 1.3rem auto;
+    padding: 0.3rem;
 }
 
 .text-center {
@@ -129,10 +139,10 @@ h1 {
 }
 
 .description {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-style: italic;
 }
 
-form {
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 0.5rem;
+label {
+    display: flex;
 }
