@@ -98,30 +98,28 @@ body {
     line-height: 1.4;
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
 .container {
     width: 100%;
     margin: 0 auto;
 }
 
 .header {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
+    background: rgba(62, 155, 145, 0.7);
+    border-radius: 0.5rem;
+    padding: 2.5rem;
 }
 
 form {
     background: rgba(101, 81, 172, 0.7);
     border-radius: 0.5rem;
+    margin-bottom: 2rem;
     padding: 2.5rem;
 }
 
 .form-group {
     margin: 0 auto 1.3rem auto;
-    padding: 0.3rem;
+    padding: 0.5rem;
 }
 
 .text-center {
@@ -132,6 +130,11 @@ h1 {
     font-size: 4rem;
 }
 
+p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
 .description {
     font-size: 1.8rem;
     font-style: italic;
@@ -140,7 +143,6 @@ h1 {
 label {
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
@@ -149,6 +151,65 @@ label {
     width: 100%;
     height: 3.5rem;
     padding: 0.5rem;
-    border: 1px solid #a9a9a9;
+    border: 1px solid #FAC564;
     border-radius: 0.5rem;
+}
+
+.form-input:focus,
+.input-textarea:focus {
+    border-color: #FAC564;
+    box-shadow: 0 0 0 0.3rem rgba(250, 197, 100, 0.75);
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.8rem;
+    min-height: 1.8rem;
+    min-width: 1.8rem;
+}
+
+.input-textarea {
+    border: 1px solid #FAC564;
+    border-radius: 0.5rem;
+    min-height: 80px;
+    width: 100%;
+    padding: 0.5rem;
+    resize: vertical;
+}
+
+label,
+.form-input,
+.input-textarea {
+    font-size: 1.6rem;
+}
+
+.submit-button {
+    display: block;
+    border-radius: 5px;
+    background: #3E9B91;
+    color: inherit;
+    font-size: 20px;
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 570px) {
+    form,
+    .header {
+        margin: 0;
+        border-radius: 0;
+    }
 }
