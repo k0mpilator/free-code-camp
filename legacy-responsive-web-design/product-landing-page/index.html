@@ -8,6 +8,61 @@
     <title>Product Landing Page</title>
   </head>
   <body>
-    <div class="page-wrapper"></div>
+    <div class="page-wrapper">
+      <header id="header">
+        <div class="header-logo">
+          <img src="" alt="" id="header-img" />
+          <nav id="nav-bar">
+            <ul>
+              <li class="nav-link" href="#about">About Us</li>
+              <li class="nav-link" href="#tours">Tours</li>
+              <li class="nav-link" href="#contacts">Contacts</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <section id="about">
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CNpqVWhgdZs?controls=0&amp;start=5"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="tours"></section>
+        <section id="contacts">
+          <form id="form" action="#">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name..."
+              required=""
+            />
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Enter your phone number..."
+              required=""
+            />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email adress..."
+              required=""
+            />
+            <input id="submit" class="form-button" type="submit" value="Send" />
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
