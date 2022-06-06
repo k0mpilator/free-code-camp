@@ -87,3 +87,36 @@ h6 {
     font-weight: 400;
 }
 /*-----End-----*/
+body {
+    font-family: 'Roboto', sans-serif;;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    min-height: 80px;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-logo {
+    width: 60vw;
+}
+
+#header-img {
+    display: flex;
+    margin-left: 100px;
+}
+
+#nav-bar {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#nav-bar > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+}
