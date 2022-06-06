@@ -20,15 +20,24 @@
         </div>
         <nav id="nav-bar">
           <ul>
-            <li class="nav-link" href="#about">About Us</li>
+            <li> <a class="nav-link" href="#about">About Us</a></li>
             <li class="nav-link" href="#tours">Tours</li>
             <li class="nav-link" href="#contacts">Contacts</li>
           </ul>
         </nav>
       </header>
+      <div class="mountain-image">
+        <img id="bg" src="./img/mountain-image.jpg" alt="mountain">
+      </div>
       <div class="container">
         <section id="about">
-          <iframe
+          <div class="about-item">
+            <h1 class="about-item__header">World Climbing Tours</h1>
+            <p class="about-item__text">We are experts in organizing climbing tours for experienced climbers and beginners. You can entrust us with the complete organization of your adventure from A to Z and be sure of the quality and safety of the ascent.
+              Our company provides everything you need: advice on choosing a tour, flight, visa, accommodation booking, meals, equipment necessary for climbing, experienced guides, full support.</p>
+          </div>
+          <div class="about-item">
+            <iframe
             id="video"
             width="560"
             height="315"
@@ -38,6 +47,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
+          </div>
         </section>
         <section id="tours"></section>
         <section id="contacts">
