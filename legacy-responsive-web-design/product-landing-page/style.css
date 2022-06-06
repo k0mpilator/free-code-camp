@@ -92,12 +92,15 @@ body {
 }
 
 header {
+    background-color: rgba(87, 116, 137, 0.85);
+    color: #eee;
     display: flex;
     position: fixed;
     min-height: 80px;
     top: 0;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .header-logo {
@@ -119,4 +122,31 @@ header {
     flex-direction: row;
     justify-content: space-around;
     width: 35vw;
+}
+
+.mountain-image {}
+
+#bg {
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    margin-top: 100px;
+}
+
+.about-item__header {
+    font-size: 2vw;
+}
+
+.about-item__text {
+    font-size: 1vw;
 }
